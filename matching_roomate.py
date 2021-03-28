@@ -101,8 +101,6 @@ def get_matching_score(row_a, row_b):
         wake_up_dif = abs(int((datetime.strptime(wake_up_time_row_a, FMT) - datetime.strptime(wake_up_time_row_b, FMT)).seconds / 3600))
     else:
         wake_up_dif = abs(int((datetime.strptime(wake_up_time_row_b, FMT) - datetime.strptime(wake_up_time_row_a, FMT)).seconds / 3600))
-    print(type(wake_up_dif))
-    print(wake_up_dif)
     if wake_up_dif <= 2:
         score += 15
     elif wake_up_dif <= 4:
@@ -150,5 +148,3 @@ def get_matching_score(row_a, row_b):
         score -= 30
 
     return score
-
-
