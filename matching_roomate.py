@@ -3,7 +3,7 @@ from datetime import datetime
 # import answers
 profile_data = pd.read_csv('Answers/answers.csv', sep=',')
 
-
+# looks at two profiles and returns a score based on their answers
 def get_matching_score(row_a, row_b):
     score = 0
     # location
